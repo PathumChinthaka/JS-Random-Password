@@ -1,4 +1,95 @@
 *{
     box-sizing: border-box;
-    font-family: 'Roboto',sans-serif;
+    font-family: monospace;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+.container{
+    width: 500px;
+    background-color: cadetblue;
+    border-radius:5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0,0.3);
+    margin: 10px;
+}
+
+h1{
+}
+
+.view-password{
+    border: 2px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+
+input::placeholder{
+    letter-spacing: 0px;
+    color: black;
+}
+
+.fa-copy{
+    cursor: pointer;
+    font-size: 25px;
+    opacity: 0.4;
+}
+
+.fa-copy:hover{
+    opacity: 0.7;
+}
+
+.btn{
+    background-color: rgb(71, 70, 70);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin: 15px 0;
+    padding: 10px 10px;
+    font-size: 17px;
+}
+
+.btn:hover{
+    background-color: blueviolet;
+    color: white;
+    transition:ease-in-out background 0.3s;
+}
+
+.btn:active{
+    transform: scale(0.95);
+}
+
+.alert-container{
+    position: fixed;
+    width: 300px;
+    height: 50px;
+    background-color: chartreuse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0,0.3);
+    right: 20px;
+    bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    justify-content: center;
+}
+
+.active.alert-container{
+    right: -300px;
 }
